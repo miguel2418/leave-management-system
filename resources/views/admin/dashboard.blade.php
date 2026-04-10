@@ -1,3 +1,12 @@
+@extends('layouts.app')
+
+@section('content')
+
+
+
+
+
+
 <h2>Admin Dashboard</h2>
 
 <p>Welcome, {{ auth()->user()->name }}</p>
@@ -8,3 +17,5 @@
 <br><br>
 
 <a href="/dashboard">Go to Employee Dashboard</a>
+
+@endsection

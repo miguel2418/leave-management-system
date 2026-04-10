@@ -1,3 +1,13 @@
+
+@extends('layouts.app')
+
+@section('content')
+
+
+
+
+
+
 <h2>Pending Leave Requests</h2>
 
 @if(session('success'))
@@ -33,3 +43,6 @@
     </tr>
     @endforeach
 </table>
+
+
+@endsection

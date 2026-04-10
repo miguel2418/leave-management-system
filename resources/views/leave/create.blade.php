@@ -1,3 +1,12 @@
+@extends('layouts.app')
+
+@section('content')
+
+
+
+
+
+
 <h2>Leave Request</h2>
 
 @if(session('success'))
@@ -35,3 +44,6 @@
         </ul>
     </div>
 @endif
+
+
+@endsection

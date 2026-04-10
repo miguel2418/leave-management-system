@@ -54,14 +54,15 @@
                         </a>
                     </li>
 
-                    @if(auth()->user()->role === 'admin')
-                    <li class="nav-item">
-                        <a href="/admin/leave-requests" class="nav-link">
-                            <i class="nav-icon fas fa-check"></i>
-                            <p>Approve Leaves</p>
-                        </a>
-                    </li>
-                    @endif
+                 @if(auth()->check() && auth()->user()->role === 'admin')
+<li class="nav-item">
+    <a href="/admin/leave-requests" class="nav-link">
+        <i class="nav-icon fas fa-check"></i>
+        <p>Approve Leaves</p>
+    </a>
+</li>
+@endif
+--}}    
 
                 </ul>
             </nav>
